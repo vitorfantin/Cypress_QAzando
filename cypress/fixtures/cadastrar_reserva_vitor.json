@@ -1,0 +1,12 @@
+
+{
+    "firstname": "Vitor",
+    "lastname": "Fantin",
+    "totalprice": 1500,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2025-09-11",
+        "checkout": "2025-11-25"
+    },
+    "additionalneeds": "Quero Café com leite"
+}

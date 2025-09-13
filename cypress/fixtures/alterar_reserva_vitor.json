@@ -1,0 +1,12 @@
+
+{
+    "firstname": "Vitor",
+    "lastname": "Fantin",
+    "totalprice": 5000,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2125-09-11",
+        "checkout": "2125-11-25"
+    },
+    "additionalneeds": "Chopp gelado"
+}
