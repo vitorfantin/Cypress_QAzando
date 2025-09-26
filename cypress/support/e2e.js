@@ -16,3 +16,6 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import './reservaFaker'
+import './cadastro_commands'
+import './login_commands'
+import './checkout_commands'
