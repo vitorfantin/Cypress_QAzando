@@ -30,7 +30,7 @@ describe('Checkout One', () => {
 
     });
 
-    it.only('Deve exibir mensagens de erro ao tentar enviar o formulário sem preencher os campos obrigatórios', () => {
+    it('Deve exibir mensagens de erro ao tentar enviar o formulário sem preencher os campos obrigatórios', () => {
         cy.get('.checkout-area-bg > .theme-btn-one').click();
         cy.get(':nth-child(1) > .form-group > #errorMessageFirstName').and('contain', 'O campo First Name deve ser prenchido');
         cy.get(':nth-child(2) > .form-group > #errorMessageFirstName').and('contain', 'O campo Last Name deve ser prenchido');
