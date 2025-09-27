@@ -8,17 +8,20 @@ Cypress.Commands.add('inserirEmail', (email) => {
     cy.get('#user').type(email);
 });
 
-Cypress.Commands.add('inserirSenha ', (senha) => {
+Cypress.Commands.add('inserirSenha', (senha) => {
     cy.get('#password').type(senha);
 });
 
 Cypress.Commands.add('marcarLembrarSenha', () => {
-    cy.get('#materialUnchecked').contains('Lembrar de mim').click;
+
+
+    cy.get('.form-check-label').contains('Lembrar de mim');
+    cy.get('#materialUnchecked').check();
 
 });
 
 Cypress.Commands.add('clicarBtnLogin', () => {
-    cy.get('#btnLogin').click
+    cy.get('#btnLogin').click();
 });
 
 Cypress.Commands.add('verificarLoginComSucesso', () => {
@@ -32,6 +35,6 @@ Cypress.Commands.add('clicarBtnFecharPopup', () => {
 });
 
 Cypress.Commands.add('validarMsgErro', (msgErro) => {
-        cy.get('.invalid_input').should('be.visible').and('contain', 'msgErro'); // Verifica se a mensagem de erro é exibida
+    cy.get('.invalid_input').should('be.visible').and('contain', msgErro); // Verifica se a mensagem de erro é exibida
 
 });

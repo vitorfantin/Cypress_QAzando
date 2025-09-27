@@ -5,7 +5,7 @@ describe('Funcionalidade de Login', () => {
         cy.get('#top_header').find('a').contains('Login').click(); // Clica no link de login no cabeçalho
         cy.url().should('eq', 'https://automationpratice.com.br/login'); // Verifica se a URL é a esperada
     });
-    it.only('Login com SUCESSO', () => {
+    it('Login com SUCESSO', () => {
         cy.get('#user').type('vitor@teste.com.br'); // Preenche o campo de usuário
         cy.get('#password').type('teste123');
         cy.get('#materialUnchecked').check();
