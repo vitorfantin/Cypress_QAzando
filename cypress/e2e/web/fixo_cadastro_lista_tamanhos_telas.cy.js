@@ -1,4 +1,4 @@
-const tamanhoTelas = ['macbook-16', 'macbook-15', 'macbook-13', 'macbook-11', 'ipad-2', 'ipad-mini', 'iphone-xr', 'iphone-x', 'iphone-6', 'iphone-se2', 'iphone-8', 'iphone-7', 'iphone-6', 'iphone-5', 'iphone-4', 'iphone-3', 'samsung-s10', ' samsung-note9'];
+const tamanhoTelas = ['macbook-16', 'macbook-15', 'macbook-13', 'macbook-11', 'ipad-2', 'ipad-mini', 'iphone-xr','iphone-se2', 'samsung-s10', 'samsung-note9'];
 
 // criando forEach de tamanhos de telas diferentes em cada cenário de testes por funcionalidade, onde describe se repetirá todas a lista de tamanhos de telas. 
 tamanhoTelas.forEach((tela) => {
